@@ -1,14 +1,14 @@
 Inline Spoilers (Fixed)
 =================
-**Contributors:** Sergey Kuzmich, iCON  
+**Contributors:** Sergey Kuzmich  
 **Tags:** shortcode, spoiler  
 **Requires at least:** 3.9.1  
 **Tested up to:** 4.7.2  
-**Stable tag:** 1.2.6  
+**Stable tag:** 1.2.6.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
-The plugin allows to create content spoilers with simple shortcode. This version works with Infinite Scroll. This is a fork of [Inline Spoilers](https://wordpress.org/plugins/inline-spoilers/) by Sergey Kuzmich.
+The plugin allows to create content spoilers with simple shortcode. This version works with Infinite Scroll and integrates a few fixes.
 
 ## Description ##
 `Example: [spoiler title="Expand Me"]Spoiler content[/spoiler]`
@@ -46,6 +46,10 @@ To remove default title you can use
 
 
 ## Changelog ##
+### 1.2.6.1 (mod) ###
+* Style fixes
+* Load JS & CSS everywhere (workaround for bug)
+
 ### 1.2.6 (mod) ###
 * Modification by iCON from WiiDatabase.de
 * Plugin now works with Infinite Scroll
