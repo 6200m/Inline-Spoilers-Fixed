@@ -2,30 +2,19 @@
  * @package Inline Spoilers
  */
 
-function inlineSpoiler() {
-  jQuery(".spoiler-head").on('click', function(event) {
-    $this = jQuery(this);
-    event.stopImmediatePropagation();
-    if ($this.hasClass("expanded")) {
-      $this.removeClass("expanded");
-      $this.addClass("collapsed");
-      $this.prop('title', title.expand);
-      $this.next().slideUp("fast");
-    } else {
-      $this.removeClass("collapsed");
-      $this.addClass("expanded");
-      $this.prop('title', title.collapse);
-      $this.next().slideDown("fast");
-    }
-  });
-}
+jQuery(function () {
+    jQuery(".spoiler-head").removeClass("no-icon");
+    jQuery(".spoiler-head").on('click', function (event) {
+        $this = jQuery(this);
+        $isExpanded = $this.hasClass("expanded");
 
-jQuery(function() {
-  inlineSpoiler();
-});
+        $this.toggleClass("expanded").toggleClass("collapsed");
+        $this.prop('title', $isExpanded ? title.collapse : title.expand);
 
-jQuery(function($) {
-  $(document.body).on('post-load', function() {
-    inlineSpoiler();
-  });
+        if($isExpanded) {
+            $this.next().slideUp("fast");
+        } else {
+            $this.next().slideDown("fast");
+        }
+    });
 });

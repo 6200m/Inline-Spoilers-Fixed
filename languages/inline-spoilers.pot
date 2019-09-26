@@ -40,5 +40,5 @@ msgid "The plugin allows to create content spoilers with simple shortcode."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Sergey Kuzmich, iCON"
+msgid "Sergey Kuzmich"
 msgstr ""
